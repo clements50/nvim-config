@@ -67,6 +67,9 @@ use({ "hrsh7th/nvim-cmp" }) -- The completion plugin
 	use({ "L3MON4D3/LuaSnip" }) --snippet engine
 	use({ "rafamadriz/friendly-snippets" }) --
 
+    --null ls
+   use('jose-elias-alvarez/null-ls.nvim')
+
   if packer_bootstrap then
     require('packer').sync()
   end
