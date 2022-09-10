@@ -33,35 +33,9 @@ return require('packer').startup(function(use)
 		"williamboman/mason-lspconfig.nvim",
 		"neovim/nvim-lspconfig",
 	})
-	--cmp
-	use("hrsh7th/cmp-buffer")
-	use("hrsh7th/cmp-path")
-	use("hrsh7th/cmp-cmdline")
-	use("hrsh7th/nvim-cmp")
-	use("saadparwaiz1/cmp_luasnip")
-	use("hrsh7th/cmp-nvim-lsp")
-
-	--luasnip
-
-	use("L3MON4D3/LuaSnip")
-	use("rafamadriz/friendly-snippets")
-
-	--autopairs
-	use({
-		"windwp/nvim-autopairs",
-		config = function()
-			require("nvim-autopairs").setup({})
-		end,
-	})
-
-	--autotag
-	use("windwp/nvim-ts-autotag")
 
 	--plenary
 	use("nvim-lua/plenary.nvim")
-
-	--null
-	use("jose-elias-alvarez/null-ls.nvim")
 
 	--telescope
 	use({

@@ -10,7 +10,4 @@ configs.setup({
 		enable = true, -- false will disable the whole extension
 		disable = { "rust" }, -- list of language that will be disabled
 	},
-	autopairs = {
-		enable = true,
-	},
 })
