@@ -7,32 +7,26 @@ local keymap = vim.api.nvim_set_keymap
 keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 
--- Modes
---   normal_mode = "n",
---   insert_mode = "i",
---   visual_mode = "v",
---   visual_block_mode = "x",
---   term_mode = "t",
---   command_mode = "c",
-
 keymap("n", "<leader>q", ":q<cr>", opts)
 keymap("n", "<leader>w", ":w<cr>", opts)
 keymap("n", "<leader>e", ":Ex<cr>", opts)
 keymap("n", "<leader>f", ":Telescope find_files<cr>", opts)
 
 --opening windows
-keymap("n", "<leader>vw", ":vert sb<cr>", opts)
-keymap("n", "<leader>hw", ":sb<cr>", opts)
+keymap("n", "<leader>vb", ":vert sb<cr> | <C-w>l", opts)
+keymap("n", "<leader>hb", ":sb<cr> | <C-w>j", opts)
 
 --better window navigation
-keymap("n", "<leader>b", "<C-w>", opts)
+keymap("n", "<leader>bl", "<C-w>l", opts)
+keymap("n", "<leader>bh", "<C-w>h", opts)
+keymap("n", "<leader>bj", "<C-w>j", opts)
+keymap("n", "<leader>bk", "<C-w>k", opts)
 
 --dap
-
 keymap("n", "<leader>db", ":lua require'dap'.toggle_breakpoint()<cr>", opts)
 keymap("n", "<leader>ds", ":lua require'dap'.continue()<cr>", opts)
-keymap("n", "<leader>dso", ":lua require'dap'.step_over()<cr>", opts)
-keymap("n", "<leader>dsi", ":lua require'dap'.step_into()<cr>", opts)
+keymap("n", "<leader>so", ":lua require'dap'.step_over()<cr>", opts)
+keymap("n", "<leader>si", ":lua require'dap'.step_into()<cr>", opts)
 keymap("n", "<leader>3", ":lua require'dap'.repl.open()<cr>", opts)
 
 --dapui
