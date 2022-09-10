@@ -26,3 +26,17 @@ keymap("n", "<leader>hw", ":sb<cr>", opts)
 
 --better window navigation
 keymap("n", "<leader>b", "<C-w>", opts)
+
+--dap
+
+keymap("n", "<leader>db", ":lua require'dap'.toggle_breakpoint()<cr>", opts)
+keymap("n", "<leader>ds", ":lua require'dap'.continue()<cr>", opts)
+keymap("n", "<leader>dso", ":lua require'dap'.step_over()<cr>", opts)
+keymap("n", "<leader>dsi", ":lua require'dap'.step_into()<cr>", opts)
+keymap("n", "<leader>3", ":lua require'dap'.repl.open()<cr>", opts)
+
+--dapui
+keymap("n", "<leader>do", ":lua require('dapui').open()<cr>", opts)
+keymap("n", "<leader>dc", ":lua require('dapui').close()<cr>", opts)
+keymap("n", "<leader>dt", ":lua require('dapui').toggle()<cr>", opts)
+keymap("n", "<leader>dw", ":lua require('dapui').float_element()<cr>", opts)
