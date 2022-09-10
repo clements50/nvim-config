@@ -7,6 +7,6 @@
     rm -rf ~/.cache/nvim
 
 # uninstall windows
-   rd -r ~\AppData\Local\nvim
-   rd -r ~\AppData\Local\nvim-data
+    rd -r ~\AppData\Local\nvim
+    rd -r ~\AppData\Local\nvim-data
 
