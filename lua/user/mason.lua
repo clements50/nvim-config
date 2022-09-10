@@ -1,4 +1,9 @@
-require("mason").setup({
+local status_ok, mason = pcall(require, "mason")
+ if not status_ok then
+	 return
+ end
+
+mason.setup({
 	ui = {
 		icons = {
 			package_installed = "✓",
@@ -8,7 +13,13 @@ require("mason").setup({
 	},
 })
 
-require("mason-lspconfig").setup({
+
+local status_ok, masonLspConfig = pcall(require, "mason-lspconfig")
+ if not status_ok then
+	 return
+ end
+
+masonLspConfig.setup({
 	ensure_installed = {
 		"sumneko_lua",
 		"rust_analyzer",
@@ -20,10 +31,7 @@ require("mason-lspconfig").setup({
 	},
 })
 
-require("mason-lspconfig").setup_handlers({
-	-- The first entry (without a key) will be the default handler
-	-- and will be called for each installed server that doesn't have
-	-- a dedicated handler.
+masonLspConfig.setup_handlers({
 	function(server_name) -- default handler (optional)
 		require("lspconfig")[server_name].setup({})
 	end,

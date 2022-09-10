@@ -1,4 +1,9 @@
-require("dapui").setup()
+local status_ok, dapui = pcall(require, 'dapui')
+if not status_ok then
+    return
+end
+
+dapui.setup()
 
 local dap = require("dap")
 dap.adapters.node2 = {
