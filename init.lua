@@ -1,0 +1,7 @@
+require("user.packer")
+require("user.mason")
+require("user.options")
+require("user.keymaps")
+require("user.theme")
+require("user.treesitter")
+require("user.dap")
