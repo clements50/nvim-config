@@ -6,3 +6,6 @@ require("user.keymaps")
 require("user.theme")
 require("user.dap")
 require("user.treesitter")
+require("user.cmp")
+
+
