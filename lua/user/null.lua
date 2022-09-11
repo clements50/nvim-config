@@ -5,7 +5,6 @@ end
 
 local formatting = null_ls.builtins.formatting
 local diagnostics = null_ls.builtins.diagnostics
-local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
@@ -23,6 +22,7 @@ null_ls.setup({
     -- you can reuse a shared lspconfig on_attach callback here
 	sources = {
 		formatting.prettier.with({ extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } }),
+		formatting.stylua,
 	},
     on_attach = function(client, bufnr)
         if client.supports_method("textDocument/formatting") then
