@@ -23,11 +23,11 @@ keymap("n", "<leader>bj", "<C-w>j", opts)
 keymap("n", "<leader>bk", "<C-w>k", opts)
 
 --dap
-keymap("n", "<leader>db", ":lua require'dap'.toggle_breakpoint()<cr>", opts)
-keymap("n", "<leader>ds", ":lua require'dap'.continue()<cr>", opts)
-keymap("n", "<leader>so", ":lua require'dap'.step_over()<cr>", opts)
-keymap("n", "<leader>si", ":lua require'dap'.step_into()<cr>", opts)
-keymap("n", "<leader>3", ":lua require'dap'.repl.open()<cr>", opts)
+keymap("n", "<leader>d", ":lua require'dap'.continue()<cr>", opts)
+keymap("n", "<leader>5", ":lua require'dap'.step_over()<cr>", opts)
+keymap("n", "<leader>6", ":lua require'dap'.step_into()<cr>", opts)
+keymap("n", "<leader>b", ":lua require'dap'.toggle_breakpoint()<cr>", opts)
+keymap("n", "<leader>dr", ":lua require'dap'.repl.open()<cr>", opts)
 
 --dapui
 keymap("n", "<leader>do", ":lua require('dapui').open()<cr>", opts)
