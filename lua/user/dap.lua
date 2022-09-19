@@ -16,7 +16,7 @@ for _, language in ipairs({ "typescript", "javascript" }) do
 		{
 			type = "pwa-node",
 			request = "launch",
-			name = "Launch file",
+			name = "Launch File",
 			program = "${file}",
 			cwd = "${workspaceFolder}",
 		},

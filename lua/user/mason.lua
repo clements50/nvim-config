@@ -1,7 +1,7 @@
 local status_ok, mason = pcall(require, "mason")
- if not status_ok then
-	 return
- end
+if not status_ok then
+	return
+end
 
 mason.setup({
 	ui = {
@@ -13,11 +13,10 @@ mason.setup({
 	},
 })
 
-
 local status_ok, masonLspConfig = pcall(require, "mason-lspconfig")
- if not status_ok then
-	 return
- end
+if not status_ok then
+	return
+end
 
 masonLspConfig.setup({
 	ensure_installed = {
