@@ -8,6 +8,7 @@ keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 
 keymap("n", "<leader>q", ":q<cr>", opts)
+keymap("n", "<leader>qf", ":q!<cr>", opts)
 keymap("n", "<leader>w", ":w<cr>", opts)
 keymap("n", "<leader>e", ":Ex<cr>", opts)
 keymap("n", "<leader>f", ":Telescope find_files<cr>", opts)
