@@ -21,12 +21,10 @@ end
 masonLspConfig.setup({
 	ensure_installed = {
 		"sumneko_lua",
-		"rust_analyzer",
 		"tsserver",
 		"cssls",
 		"jsonls",
-		"pyright",
-		"angularls",
+		"prismals",
 	},
 })
 
