@@ -1,6 +1,6 @@
 # nvim-config
 
-    git clone https://github.com/clements50/nvim-config.git ~/.config/nvim
+    git clone git@github.com:clements50/nvim-config.git ~/.config/nvim
 
 # uninstall linux/mac
 
