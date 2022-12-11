@@ -24,7 +24,6 @@ masonLspConfig.setup({
 		"tsserver",
 		"cssls",
 		"jsonls",
-		"prismals",
 	},
 })
 
