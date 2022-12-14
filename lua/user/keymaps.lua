@@ -35,3 +35,6 @@ keymap("n", "<leader>do", ":lua require('dapui').open()<cr>", opts)
 keymap("n", "<leader>dc", ":lua require('dapui').close()<cr>", opts)
 keymap("n", "<leader>dt", ":lua require('dapui').toggle()<cr>", opts)
 keymap("n", "<leader>dw", ":lua require('dapui').float_element()<cr>", opts)
+
+--lsp
+keymap("n", "<leader>dd", ":lua vim.diagnostic.open_float()<cr>", opts)
